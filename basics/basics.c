@@ -1,6 +1,7 @@
 // preprocessor instruction
 #include <stdio.h> // stodio.h is a file
 // stdio stands for "standard input/output library"
+// it is the linker component that finds the library.
 
 
 // ANSI standard
