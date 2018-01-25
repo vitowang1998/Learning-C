@@ -26,6 +26,7 @@ int main(void) // A function returns an integer and takes in nothing.
     getchar(); // wait for a keystroke
     
     return 0; // returns the type specified at the function
+    // this zero is returned to the OS
 } // The end of a function body
 
 // comment
