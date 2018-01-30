@@ -9,3 +9,8 @@ int main() {
 	printf("%d\n", max_int);
 	return 0;
 }
+
+// For each definition of an integer in C,
+// C makes use of 4 consecutive bytes (32 bits) to store the value
+// and use the address of the first byte (which is an integer) as
+// the pointer to the integer.
