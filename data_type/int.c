@@ -29,3 +29,10 @@ int main() {
 // C makes use of 4 consecutive bytes (32 bits) to store the value
 // and use the address of the first byte (which is an integer) as
 // the pointer to the integer.
+
+// The Essence of Overflow
+// C uses 4 consecutive bytes (32 bits in total) to store an integer
+// Each bit has a state of being either 1 or 0
+// So that each int has 2^32 different possible representations
+// When we exceed the limit (-2147483648 or 2147483647), we need at least
+// one an extra bit from next byte (which we don't have), hence a overflow happens.
