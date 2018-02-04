@@ -36,3 +36,11 @@ int main() {
 // So that each int has 2^32 different possible representations
 // When we exceed the limit (-2147483648 or 2147483647), we need at least
 // one an extra bit from next byte (which we don't have), hence a overflow happens.
+
+
+// In most cases, when an overflow happens, the integer value will -2^32, however, this behaviour varies on different platforms and compilers. By ANSI standard, the behaviour of an overflowed integer is undefined. We hence should never try to estimate the potential behaviour of an overflowed datatype.
+
+
+
+
+
