@@ -52,5 +52,9 @@ int main(void) {
     printf("num2 is stored at %p\n", &num2);
     printf("p = %p\n", p);
     printf("p is stored at %p\n\n\n", &p);
+    
+    
+    int special = *p * *p;
+    printf("special = %d\n", special);
 }
 
