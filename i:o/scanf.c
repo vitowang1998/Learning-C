@@ -1,4 +1,5 @@
 // scanf
+// The return value of scanf is 1 if it successfully scans the value.
 
 #include <stdio.h>
 
