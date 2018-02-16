@@ -56,5 +56,22 @@ int main(void) {
     
     int special = *p * *p;
     printf("special = %d\n", special);
+    
+    
+    
+    // a void pointer can point at anything. We can view it as a generic pointer
+    // an example
+    void *pvoid;
+    pvoid = &special;
+    
+    // the following directive will crash:
+    printf("*pvoid = %d\n", *pvoid);
+    // because we cannot directly dereference a void pointer, we have to first assign the pointer value to some pointer else.
+    
+    
+    // We should initialize any unused pointers to point at NULL
+    // The program will crash if we try to dereference NULL
+    // NULL is a value and NULL = 0 = true
+    
 }
 
