@@ -6,6 +6,8 @@
 
 // Indirection/Dereference Operator *
 // if p is a pointer, *p produces the value p points at
+// however, pointer p cannot points at itself (unless p is void*)
+
 
 
 #include <stdio.h>
