@@ -5,6 +5,9 @@
 
 
 
+
+// Pass by reference: pass a variable to a function and the variable can be mutated by the function.
+
 #include <stdio.h>
 
 int main(void) {
