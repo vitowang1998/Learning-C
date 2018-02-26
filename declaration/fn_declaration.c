@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // function declaration
-// Now we can declare the function but not
+// Now we can declare the function but not define it
 void printNum(int n);
 
 
