@@ -5,8 +5,8 @@
 // requires: valid input.
 int readInt(void) {
     int i = 0;
-    int result = scanf("%d", &i);
-    if (result == 1) {
+    int count = scanf("%d", &i);
+    if (count == 1) {
         return i;
     } else {
         printf("Error. Invalid input.\n");
