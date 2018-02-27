@@ -1,8 +1,18 @@
 #include <stdio.h>
 #include <assert.h>
+#include <stdbool.h>
 
 // general idea: we should assert any function requirements as
 //      long as it's possible
+
+void assert_mechanism (bool b) {
+    if (!b) {
+        printf("Assertion Failed.\n");
+    }
+}
+
+
+
 
 int main(){
     
