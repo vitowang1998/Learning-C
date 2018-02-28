@@ -13,7 +13,9 @@
 // we can do p - q
 // p - q = (p - q) / sizeof(*p) : number of data of type of *p between p and q
 
-
+// So for an array "a[]", the address of the first element is a or &a[0]
+// The address for the second element is &a[1] or (a + 1)
+// So &a[i] = (a + i)
 
 
 int main(void) {
@@ -25,7 +27,7 @@ int main(void) {
     p += 1;
     printf("The pointer p points at %p\n", p);
     p -= 1;
-    printf("The pointer p points at %p\n", p);
+    printf("The pointer p points at %p\n\n", p);
     
     
     int n1 = 0;
@@ -48,7 +50,7 @@ int main(void) {
         puts("p2 is smaller than p1");
     }
     
-
+    
     
 }
 
