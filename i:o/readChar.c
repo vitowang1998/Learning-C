@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 
-// readInt(ignoreSpace) reads in a character from the user. It will
+// readChar(ignoreSpace) reads in a character from the user. It will
 //      ignore a white space if ignoreSpace is true. It will not ignore
 //      a white space if ignoreSpace is false.
 // requires: valid input.
