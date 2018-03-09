@@ -8,6 +8,7 @@
 // swap(*a, *b) swaps the value of *a and *b
 // requires: a, b are valid pointers
 // effects: mutate the value of *a and *b
+// time: O(1)
 void swap(int * a, int * b) {
     assert(a);
     assert(b);
