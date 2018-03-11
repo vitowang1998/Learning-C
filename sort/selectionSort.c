@@ -17,7 +17,7 @@ void swap(int * a, int * b) {
 // selectionSort(a[], len) sorts an array of integers "a" with length "len"
 // requires: valid a, valid length
 // effects: mutate the entries in a
-// Time: O(n^2) in all cases.
+// Time: O(n^2) in all cases where n is the length of a[].
 void selectionSort(int a[], int len) {
     assert(a);
     assert(len > 0);
