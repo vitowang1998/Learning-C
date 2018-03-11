@@ -11,7 +11,7 @@ void printArray(int array[], int len) {
     for (int i = 0; i < len - 1; i++) {
         printf("%d, ", array[i]);
     }
-    printf("%d.\n", array[len]);
+    printf("%d.\n", array[len - 1]);
 }
 
 
