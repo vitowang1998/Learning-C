@@ -4,7 +4,7 @@
 // printArray(array[], len) prints the elements in arrary
 // requires: array is valid array with length len.
 //           len > 0
-// time: O(n) where n 
+// time: O(n) where n is the length of array.
 void printArray(int array[], int len) {
     assert(array);
     assert(len > 0);
@@ -16,13 +16,3 @@ void printArray(int array[], int len) {
 
 
 
-
-// Array is a built-in data structure in C.
-
-int main(void) {
-    int array[5] = {1, 2, 3};
-    
-    printArray(array, 5);
-    
-    
-}
