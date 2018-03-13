@@ -14,11 +14,11 @@ void swap(int * a, int * b) {
 }
 
 
-// selectionSort(a[], len) sorts an array of integers "a" with length "len"
+// selection_sort(a[], len) sorts an array of integers "a" with length "len"
 // requires: valid a, valid length
 // effects: mutate the entries in a
 // Time: O(n^2) in all cases where n is the length of a[].
-void selectionSort(int a[], int len) {
+void selection_sort(int a[], int len) {
     assert(a);
     assert(len > 0);
     int smallestIndex = 0;
@@ -47,7 +47,7 @@ int main(void) {
     
     printf("\nnow sorted \n");
     
-    selectionSort(a, 100);
+    selection_sort(a, 100);
     for (int i = 0; i < 100; i++) {
         printf("%d ", a[i]);
     }
