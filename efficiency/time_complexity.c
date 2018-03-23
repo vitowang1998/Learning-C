@@ -24,9 +24,9 @@
 
 
 // Summation (Time efficiency of iterations)
-// ∑(i = 1 ~ logn) O(1) = logn
-// ∑(i = 1 ~ n) O(1) = n
-// ∑(i = 1 ~ n) O(n) = n^2
+// ∑(i = 1 ~ logn) O(1) = O(logn)
+// ∑(i = 1 ~ n) O(1) = O(n)
+// ∑(i = 1 ~ n) O(n) = O(n^2)
 
 
 // Arithmetic Sequences
@@ -35,6 +35,15 @@
 
 
 
+
+// Time complexity of recursive functions
+// Time(n) = O(1) + Time(n - 1) = O(n)
+// Time(n) = O(n) + Time(n - 1) = O(n^2)
+// Time(n) = O(n^2) + Time(n - 1) = O(n^3)
+// Time(n) = O(1) + Time(n / 2) = O(log n)
+// Time(n) = O(1) + 2 * Time(n / 2) = O(n)
+// Time(n) = O(n) + 2 * Time(n / 2) = O(n * logn)
+// Time(n) = O(1) + T(n - 1) + T(n - 1) = O(2^n)
 
 
 
