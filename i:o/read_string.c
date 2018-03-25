@@ -18,7 +18,9 @@ char *read_string(void) {
     }
     
     int length = 1;
-    char *string = malloc(length * sizeof(char));
+    int max_length = 1;
+    
+    char *string = malloc(max_length * sizeof(char));
     string[0] = c;
     
     // reads the Input Stream
@@ -27,7 +29,11 @@ char *read_string(void) {
             break;
         }
         length++;
-        string = realloc(string, length * sizeof(char));
+        
+        if (length == max_length) {
+            max_length *= 2;
+            string = realloc(string, max_length * sizeof(char));
+        }
         string[length - 1] = c;
     }
     
