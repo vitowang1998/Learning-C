@@ -36,14 +36,14 @@
 
 
 
-// Time complexity of recursive functions
-// Time(n) = O(1) + Time(n - 1) = O(n)
-// Time(n) = O(n) + Time(n - 1) = O(n^2)
-// Time(n) = O(n^2) + Time(n - 1) = O(n^3)
-// Time(n) = O(1) + Time(n / 2) = O(log n)
-// Time(n) = O(1) + 2 * Time(n / 2) = O(n)
-// Time(n) = O(n) + 2 * Time(n / 2) = O(n * logn)
-// Time(n) = O(1) + T(n - 1) + T(n - 1) = O(2^n)
+// Time complexity of recursive functions: k1 >= 1, k2 > 1
+// Time(n) = O(1) + Time(n - k1) = O(n)
+// Time(n) = O(n) + Time(n - k1) = O(n^2)
+// Time(n) = O(n^2) + Time(n - k1) = O(n^3)
+// Time(n) = O(1) + Time(n / k2) = O(log n)
+// Time(n) = O(1) + k2 * Time(n / k2) = O(n)
+// Time(n) = O(n) + k2 * Time(n / k2) = O(n * logn)
+// Time(n) = O(1) + T(n - k1) + T(n - k1) = O(2^n)
 
 
 
