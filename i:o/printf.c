@@ -12,6 +12,9 @@ int main(void) {
     printf("%d\n", num);
     
     
+    // placeholder for printing a size_t variable
+    printf("The size of an int is %zd.\n", sizeof(int));
+    
     
     return 0;
 }
