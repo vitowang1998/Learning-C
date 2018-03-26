@@ -41,6 +41,9 @@ int main(void) {
     print_array(array, 10);
     print_array(array, 10);
     
+    // WE MUST FREE EVERY BLOCK WE MALLOC'D
+    // WE MUST FREE EVERY BLOCK WE MALLOC'D
+    // WE MUST FREE EVERY BLOCK WE MALLOC'D
     free(array);
     array = NULL; // assign the value of the freed pointer to NULL.
     print_array(array, 10); // will crash.
