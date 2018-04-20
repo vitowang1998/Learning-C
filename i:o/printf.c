@@ -11,6 +11,17 @@ int main(void) {
     
     printf("%d\n", num);
     
+    // placeholder for int type
+    printf("An int: %d\n", 15);
+    
+    // placeholder for char type
+    printf("A char: %c\n", a);
+    
+    // placeholder for pointer type
+    printf("A pointer: %p\n", NULL);
+    
+    // placeholder for string type
+    printf("A string %s\n", "abc");
     
     // placeholder for printing a size_t variable
     printf("The size of an int is %zd.\n", sizeof(int));
