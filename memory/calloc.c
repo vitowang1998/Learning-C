@@ -3,6 +3,7 @@
 #include <assert.h>
 
 // my_calloc(num_of_item, size_of_elem) allocates memeory and initialize them to 0, return NULL if fails
+// requires: num_of_item > 0, size_of_elem > 0
 // effects: allocates memory, needs to be manually freed.
 // time: O(n) where n = num_of_item
 void *my_calloc(int num_of_item, size_t size_of_elem);
