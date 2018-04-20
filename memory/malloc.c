@@ -26,6 +26,12 @@ void *malloc(size_t s);
 int main(void) {
     // We should always use sizeof when performing malloc.
     int *array = malloc(10 * sizeof(int));
+    
+    // check if successful
+    if (array == NULL) {
+        printf("Memory allocation unsuccessful\n");
+        exit(EXIT_FAILURE);
+    }
 
     // The heap memory is unitialized.
     print_array(array, 10);
