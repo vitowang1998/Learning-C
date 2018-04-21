@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 
+// printf is O(1)
+// However, when printf() takes a string, it's O(n) where n is the length of the string
+
 // the return value of printf is the number of chars it prints
 int main(void) {
 
