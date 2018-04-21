@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// strncpy, an alternative to strcpy, stops when space of string runs out, hence is safer.
 
 // my_strcpy overwrites the contents of dest with contentes of scr
 // requires: dest has enough size
