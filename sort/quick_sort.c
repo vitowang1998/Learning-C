@@ -20,7 +20,7 @@ void print_array(int array[], int len) {
 // requires: a, b are valid pointers
 // effects: mutate the value of *a and *b
 // time: O(1)
-void swap(int * a, int * b) {
+void swap(int *a, int *b) {
     assert(a);
     assert(b);
     int temp = *a;
@@ -28,6 +28,25 @@ void swap(int * a, int * b) {
     *b = temp;
 }
 
+
+static void quick_sort_range(int a[], int first, int last) {
+    if (last <= first) {
+        return;
+    }
+    int pivot = a[first];
+    int cur_index = last;
+    
+    for (int i = last; i > first; i--) {
+        if (a[i] > pivot) {
+            swap(&a[i], &a[cur_index]);
+            cur_index--;
+        }
+    }
+    
+    swap(&a[first], &a[cur_index]);
+    quick_sort_range(a, first, cur_index - 1);
+    quick_sort_range(a, cur_index + 1, last);
+}
 
 
 
@@ -38,29 +57,8 @@ void swap(int * a, int * b) {
 //           right >= left initially
 // effects: mutate array[]
 // time: O(nlogn) average, O(nlogn) best case, O(n^2) worst case, where n is the length of array[]
-void quick_sort(int array[], int left, int right) {
-    // Assertions
-    assert(array);
-    assert(left >= 0);
-    assert(right >= 0);
-    
-    if (left >= right) {
-        return;
-    }
-    
-    int pivot = array[left];
-    int current_index = right;
-    
-    for (int i = 1; i < right; i++) {
-        if (array[i] > pivot) {
-            swap(&array[i], &array[current_index]);
-            current_index--;
-        }
-    }
-    
-    swap(&array[current_index], &array[left]);
-    quick_sort(array, left, current_index - 1);
-    quick_sort(array, current_index + 1, right);
+void quick_sort(int a[], int len) {
+    quick_sort_range(a, 0, len - 1);
 }
 
 
